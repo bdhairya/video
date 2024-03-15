@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.section{
+    height: 220vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1578926375605-eaf7559b1458?q=80&w=1526&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+.nav{
+    position: relative;
+    height: 15vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav #nav-1{
+    padding: 0vw 4vw;
+    font-family: gilroy;
+    font-size: 2vw;
+    font-weight: 900;
+    color: blueviolet;
+    letter-spacing: 1px;
+}
+.nav #nav-2{
+    padding: 0vw 4vw;
+    font-family: gilroy;
+    font-size: 2vw;
+}
+.nav #nav-2 button{
+    padding: 0.8vw 2vw;
+    margin: 0vw 1vw;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-family: gilroy;
+    word-spacing: 2px;      
+    border-radius: 5px;
+    font-size: 1.2vw;
+}
+.nav #nav-2 button:nth-child(2){
+    background-color: white;
+    color: blueviolet;
+    transition: all ease 0.4s;
+}
+.nav #nav-2 button:nth-child(2):hover{
+    background-color: blueviolet;
+    color: white;
+}
+.wrapper{
+    position: relative;
+    height: 80vh;
+    width: 50%;
+    margin-left: 22%;
+}
+#video{
+    height: 60vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    background-image: url(https://plus.unsplash.com/premium_photo-1661443792103-a10f042b0a8c?q=80&w=1410&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: bottom;
+    background-size: cover;
+    transition: all ease 0.4s; 
+}
+#video h1{
+    position: absolute;
+    color: white;
+    background-color: blueviolet;
+    font-family: gilroy;
+    border-radius: 50px;
+    padding: 2px 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all ease 0.8s;
+}
+#video video{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all ease 0.8s; 
+}
+.wrapper:hover #video video{
+    opacity: 1;
+}
+.wrapper:hover #video h1{
+    opacity: 0;
+}
+#content{
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    /* gap: 20px; */
+}
+#content button{
+    position: relative;
+    border: 2px solid white;
+    background-color: blueviolet;
+    border-radius: 50px;
+    height: 10vh;
+    padding: 1vw 5vw;
+    /* margin: 0vw 5vw; */
+    transition: all ease 0.4s;
+}
+#content button{
+    color: white;
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 600;
+    white-space: nowrap;
+    letter-spacing: 2px;
+}
+#content button:hover{
+    background-color: white;
+    color: blueviolet;
+    border-color: blueviolet;
+}
+.wrapper2{
+    position: relative;
+    margin-top: 8vw;
+    height: 80vh;
+    width: 50%;
+    margin-left: 22%;
+}
+#video2{
+    height: 60vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    background-position: bottom;
+    background-size: cover;
+    transition: all ease 0.4s; 
+}
+#video2 iframe{
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    opacity: 1;
+    transition: all ease 0.8s; 
+}
+#content2{
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    /* gap: 20px; */
+}
+#content2 button{
+    position: relative;
+    border: 2px solid white;
+    background-color: blueviolet;
+    border-radius: 50px;
+    height: 10vh;
+    padding: 1vw 5vw;
+    /* margin: 0vw 5vw; */
+    transition: all ease 0.4s;
+}
+#content2 button{
+    color: white;
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 600;
+    white-space: nowrap;
+    letter-spacing: 2px;
+}
+#content2 button:hover{
+    background-color: white;
+    color: blueviolet;
+    border-color: blueviolet;
+}
+.audio{
+        position: relative;
+        height: 10vh;
+        width: 50%;
+        margin-left: 22%;
+        margin-top: 3vw;
+        background-color: blueviolet;
+        border-radius: 50px;
+}
+.audio audio{
+    position: relative;
+    margin-top: 5px;
+    margin-left: 27vw;
+}
+.audio h1{
+    color: blueviolet;
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    position: absolute;
+    font-family: gilroy;
+    top: 7px;
+    left: 7px;
+
+}
